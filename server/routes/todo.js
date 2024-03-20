@@ -38,4 +38,8 @@ todoRouter.delete("/delete/:id",async(req,res) =>{
         res.statusMessage = error
         res.status(500).json({error: error})
     }
-  })
+  });
+
+  module.exports = {
+    todoRouter,
+  };
